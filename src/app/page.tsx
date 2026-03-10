@@ -18,14 +18,14 @@ export default function FatLossGuidePage() {
             priority
           />
         </div>
-        <div className="absolute inset-0 z-[1] bg-[#0D0D0D]/50" />
+        <div className="absolute inset-0 z-[1] bg-black/25" />
         <div
-          className="absolute inset-0 z-[2] opacity-[0.04] mix-blend-overlay pointer-events-none"
+          className="absolute inset-0 z-[2] opacity-[0.03] mix-blend-overlay pointer-events-none"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
           }}
         />
-        <div className="absolute inset-0 z-[2] bg-gradient-to-t from-[#0D0D0D] via-transparent to-transparent" />
+        <div className="absolute inset-0 z-[2] bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
         <div className="absolute top-0 right-0 z-[2] w-[200px] h-[200px] bg-[#F5500A]/10 rounded-full blur-[100px]" />
         <div className="absolute right-12 top-12 z-10 font-[family-name:var(--font-bebas)] text-[11px] tracking-[4px] text-[#F0EDE8]/60 uppercase">
           MN ONLINE COACHING
