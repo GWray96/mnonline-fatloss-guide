@@ -141,7 +141,7 @@ export default function FatLossGuidePage() {
       </section>
 
       {/* Welcome */}
-      <div className="pt-12 sm:pt-16 md:pt-20 pb-0 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24">
+      <div className="pt-12 sm:pt-16 md:pt-20 pb-0 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 text-center">
         <div
           className="text-[11px] tracking-[4px] text-[#F5500A] uppercase mb-4"
           style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -156,7 +156,7 @@ export default function FatLossGuidePage() {
         </h2>
       </div>
       <div className="pt-8 sm:pt-10 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24">
-        <div className="max-w-3xl space-y-5 text-base sm:text-[17px] leading-[1.7] text-[#F0EDE8]/90">
+        <div className="max-w-3xl mx-auto text-center space-y-5 text-base sm:text-[17px] leading-[1.7] text-[#F0EDE8]/90">
           <p>
             You&apos;re reading this because something isn&apos;t working. Maybe
             you&apos;ve been &quot;eating healthy&quot; for months but the weight
@@ -187,7 +187,7 @@ export default function FatLossGuidePage() {
           </p>
           <p>Let&apos;s get into it.</p>
         </div>
-        <div className="max-w-3xl mt-10 md:mt-12 p-6 sm:p-8 border-l-4 border-[#F5500A] bg-[#F5500A]/10">
+        <div className="max-w-3xl mx-auto text-center mt-10 md:mt-12 p-6 sm:p-8 border-l-4 border-[#F5500A] bg-[#F5500A]/10">
           <p
             className="text-xl leading-relaxed text-[#F0EDE8] italic mb-4"
             style={{ fontFamily: "var(--font-barlow)" }}
@@ -205,7 +205,7 @@ export default function FatLossGuidePage() {
       </div>
 
       {/* Section 01: Nutrition */}
-      <div className="mt-12 sm:mt-16 md:mt-20 pt-12 sm:pt-16 md:pt-20 pb-8 md:pb-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#141414]">
+      <div className="mt-12 sm:mt-16 md:mt-20 pt-12 sm:pt-16 md:pt-20 pb-8 md:pb-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#141414] text-center">
         <div
           className="text-[#F5500A] text-sm tracking-[3px] mb-4"
           style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -224,7 +224,7 @@ export default function FatLossGuidePage() {
         >
           Nutrition
         </h2>
-        <p className="max-w-[720px] text-[17px] leading-[1.7] text-[#F0EDE8]/85">
+        <p className="max-w-[720px] mx-auto text-[17px] leading-[1.7] text-[#F0EDE8]/85">
           You can&apos;t out-train a bad diet. But you also don&apos;t need a
           perfect one. What you need is a nutrition approach that creates
           progress <em>and</em> that you can actually sustain.
@@ -649,7 +649,7 @@ export default function FatLossGuidePage() {
       </div>
 
       {/* Section 02: Training */}
-      <div className="pt-12 sm:pt-16 md:pt-20 pb-8 md:pb-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#0D0D0D]">
+      <div className="pt-12 sm:pt-16 md:pt-20 pb-8 md:pb-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#0D0D0D] text-center">
         <div
           className="text-[#F5500A] text-sm tracking-[3px] mb-4"
           style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -668,7 +668,7 @@ export default function FatLossGuidePage() {
         >
           Training
         </h2>
-        <p className="max-w-[720px] text-[17px] leading-[1.7] text-[#F0EDE8]/85">
+        <p className="max-w-[720px] mx-auto text-[17px] leading-[1.7] text-[#F0EDE8]/85">
           Nutrition handles the fat loss. Training shapes what&apos;s underneath
           — and preserves the muscle you&apos;ve worked to build. Here&apos;s how
           to do it without overcomplicating it.
@@ -988,7 +988,7 @@ export default function FatLossGuidePage() {
       </div>
 
       {/* Section 03: Lifestyle */}
-      <div className="pt-12 sm:pt-16 md:pt-20 pb-8 md:pb-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#141414]">
+      <div className="pt-12 sm:pt-16 md:pt-20 pb-8 md:pb-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#141414] text-center">
         <div
           className="text-[#F5500A] text-sm tracking-[3px] mb-4"
           style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -1007,7 +1007,7 @@ export default function FatLossGuidePage() {
         >
           Lifestyle
         </h2>
-        <p className="max-w-[720px] text-[17px] leading-[1.7] text-[#F0EDE8]/85">
+        <p className="max-w-[720px] mx-auto text-[17px] leading-[1.7] text-[#F0EDE8]/85">
           You can nail nutrition and training and still struggle. If you&apos;re
           running on 4 hours of sleep and maxed out on stress, your body is
           fighting against you. Here&apos;s what to fix.
@@ -1025,7 +1025,7 @@ export default function FatLossGuidePage() {
             />
           </div>
         </div>
-        <div className="max-w-3xl mx-auto mb-12 space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90">
+        <div className="max-w-3xl mx-auto mb-12 text-center space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90">
           <p>
             Your ability to succeed with nutrition and training is almost
             entirely dependent on the lifestyle surrounding it. If you&apos;re
