@@ -19,3 +19,11 @@
   --font-display: var(--font-bebas), "Bebas Neue", sans-serif;
   --font-condensed: var(--font-barlow-condensed), "Barlow Condensed", sans-serif;
 }
+
+/* Responsive container - uses full width with optimal max */
+.container-guide {
+  width: 100%;
+  max-width: 80rem; /* 1280px - uses more screen on large displays */
+  margin-left: auto;
+  margin-right: auto;
+}

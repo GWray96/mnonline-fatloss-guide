@@ -27,10 +27,10 @@ export default function FatLossGuidePage() {
         />
         <div className="absolute inset-0 z-[2] bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
         <div className="absolute top-0 right-0 z-[2] w-[200px] h-[200px] bg-[#F5500A]/10 rounded-full blur-[100px]" />
-        <div className="absolute right-12 top-12 z-10 font-[family-name:var(--font-bebas)] text-[11px] tracking-[4px] text-[#F0EDE8]/60 uppercase">
+        <div className="absolute right-4 top-4 sm:right-6 sm:top-6 md:right-8 md:top-8 lg:right-12 lg:top-12 z-10 font-[family-name:var(--font-bebas)] text-[10px] sm:text-[11px] tracking-[4px] text-[#F0EDE8]/60 uppercase">
           MN ONLINE COACHING
         </div>
-        <div className="relative z-10 px-16 pb-24 md:px-28">
+        <div className="relative z-10 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 pb-16 sm:pb-20 md:pb-24 max-w-7xl">
           <div className="text-[11px] tracking-[4px] text-[#F5500A] uppercase mb-6">
             Free Resource — Complete Guide
           </div>
@@ -63,14 +63,15 @@ export default function FatLossGuidePage() {
       </section>
 
       {/* TOC */}
-      <section className="py-24 px-16 md:px-28 bg-[#0D0D0D]">
+      <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#0D0D0D]">
+        <div className="max-w-7xl mx-auto">
         <h2
-          className="text-[clamp(36px,4vw,52px)] tracking-[2px] mb-16"
+          className="text-[clamp(32px,4vw,52px)] tracking-[2px] mb-10 md:mb-16"
           style={{ fontFamily: "var(--font-bebas)" }}
         >
           What&apos;s <span className="text-[#F5500A]">Inside</span>
         </h2>
-        <div className="grid md:grid-cols-3 gap-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 md:gap-16">
           <div>
             <div
               className="text-[#F5500A] text-sm tracking-[3px] mb-4"
@@ -136,10 +137,11 @@ export default function FatLossGuidePage() {
             </ul>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Welcome */}
-      <div className="pt-20 pb-0 px-16 md:px-28">
+      <div className="pt-12 sm:pt-16 md:pt-20 pb-0 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24">
         <div
           className="text-[11px] tracking-[4px] text-[#F5500A] uppercase mb-4"
           style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -153,8 +155,8 @@ export default function FatLossGuidePage() {
           Welcome.
         </h2>
       </div>
-      <div className="pt-10 px-16 md:px-28">
-        <div className="max-w-[780px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90">
+      <div className="pt-8 sm:pt-10 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24">
+        <div className="max-w-3xl space-y-5 text-base sm:text-[17px] leading-[1.7] text-[#F0EDE8]/90">
           <p>
             You&apos;re reading this because something isn&apos;t working. Maybe
             you&apos;ve been &quot;eating healthy&quot; for months but the weight
@@ -185,7 +187,7 @@ export default function FatLossGuidePage() {
           </p>
           <p>Let&apos;s get into it.</p>
         </div>
-        <div className="max-w-[780px] mt-12 p-8 border-l-4 border-[#F5500A] bg-[#F5500A]/10">
+        <div className="max-w-3xl mt-10 md:mt-12 p-6 sm:p-8 border-l-4 border-[#F5500A] bg-[#F5500A]/10">
           <p
             className="text-xl leading-relaxed text-[#F0EDE8] italic mb-4"
             style={{ fontFamily: "var(--font-barlow)" }}
@@ -203,7 +205,7 @@ export default function FatLossGuidePage() {
       </div>
 
       {/* Section 01: Nutrition */}
-      <div className="mt-20 pt-20 pb-12 px-16 md:px-28 bg-[#141414]">
+      <div className="mt-12 sm:mt-16 md:mt-20 pt-12 sm:pt-16 md:pt-20 pb-8 md:pb-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#141414]">
         <div
           className="text-[#F5500A] text-sm tracking-[3px] mb-4"
           style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -228,22 +230,22 @@ export default function FatLossGuidePage() {
           progress <em>and</em> that you can actually sustain.
         </p>
       </div>
-      <div className="px-16 md:px-28 py-12 bg-[#141414]">
-        <div className="max-w-[900px] mx-auto mb-16">
-          <div className="relative w-full aspect-[16/10] rounded overflow-hidden">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 py-8 md:py-12 bg-[#141414]">
+        <div className="max-w-7xl mx-auto mb-10 md:mb-16">
+          <div className="relative w-full aspect-video sm:aspect-[16/10] rounded overflow-hidden">
             <Image
               src="/images/nutrition-healthy.png"
               alt="Healthy salad with grilled chicken"
               fill
               className="object-cover"
-              sizes="900px"
+              sizes="(max-width: 768px) 100vw, 1280px"
             />
           </div>
         </div>
 
         {/* 1.1 Calories */}
-        <div className="max-w-[900px] mx-auto mb-16">
-          <div className="flex gap-8 mb-8">
+        <div className="max-w-7xl mx-auto mb-12 md:mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-6 md:mb-8">
             <div
               className="text-[#F5500A] text-sm tracking-[2px] shrink-0"
               style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -265,7 +267,7 @@ export default function FatLossGuidePage() {
               </h3>
             </div>
           </div>
-          <div className="ml-[72px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90">
+          <div className="sm:ml-0 md:ml-16 lg:ml-0 md:ml-16 lg:ml-[72px] space-y-5 text-base sm:text-[17px] leading-[1.7] text-[#F0EDE8]/90">
             <p>
               Fat loss is simple — not easy. You must burn more calories than
               you consume. That&apos;s it. Everything else — the fad diets, the
@@ -288,7 +290,7 @@ export default function FatLossGuidePage() {
               drive consistent progress without making your life miserable.
             </p>
           </div>
-          <div className="ml-[72px] mt-10 p-6 border border-[#F5500A]/30 bg-[#F5500A]/5 rounded">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] mt-10 p-6 border border-[#F5500A]/30 bg-[#F5500A]/5 rounded">
             <p className="text-[#F0EDE8] font-medium mb-2">
               A general starting point: consume 10–15 calories per pound of
               bodyweight daily. Where you land on that scale depends on how
@@ -299,7 +301,7 @@ export default function FatLossGuidePage() {
               the one you can stick to.
             </p>
           </div>
-          <div className="ml-[72px] mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="p-6 bg-[#1A1A1A] rounded text-center">
               <div
                 className="text-2xl text-[#F5500A] mb-1"
@@ -337,8 +339,8 @@ export default function FatLossGuidePage() {
         </div>
 
         {/* 1.2 Macros */}
-        <div className="max-w-[900px] mx-auto mb-16">
-          <div className="flex gap-8 mb-8">
+        <div className="max-w-7xl mx-auto mb-12 md:mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-6 md:mb-8">
             <div
               className="text-[#F5500A] text-sm tracking-[2px] shrink-0"
               style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -360,7 +362,7 @@ export default function FatLossGuidePage() {
               </h3>
             </div>
           </div>
-          <div className="ml-[72px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90 mb-10">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90 mb-10">
             <p>
               Macronutrients make up the calories in everything you eat. Protein,
               fats, and carbohydrates each contribute differently to your total
@@ -368,7 +370,7 @@ export default function FatLossGuidePage() {
               you real control over what you&apos;re eating.
             </p>
           </div>
-          <div className="ml-[72px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 icon: "🍽️",
@@ -411,7 +413,7 @@ export default function FatLossGuidePage() {
               </div>
             ))}
           </div>
-          <div className="ml-[72px] mt-10 p-6 bg-[#1A1A1A] rounded border-l-4 border-[#F5500A]">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] mt-10 p-6 bg-[#1A1A1A] rounded border-l-4 border-[#F5500A]">
             <div
               className="text-[11px] tracking-[3px] text-[#F5500A] uppercase mb-2"
               style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -438,7 +440,7 @@ export default function FatLossGuidePage() {
               ))}
             </ul>
           </div>
-          <div className="ml-[72px] mt-10 space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] mt-10 space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90">
             <p>
               <strong>On carbs:</strong> Carbohydrates are not the enemy. They
               are not making you fat. No single macronutrient causes fat gain —
@@ -449,7 +451,7 @@ export default function FatLossGuidePage() {
               what remains after you&apos;ve set your protein and fat targets.
             </p>
           </div>
-          <div className="ml-[72px] mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 bg-[#1A1A1A] rounded">
               <div
                 className="text-base font-semibold mb-3"
@@ -482,8 +484,8 @@ export default function FatLossGuidePage() {
         </div>
 
         {/* 1.3 Supplements */}
-        <div className="max-w-[900px] mx-auto mb-16">
-          <div className="flex gap-8 mb-8">
+        <div className="max-w-7xl mx-auto mb-12 md:mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-6 md:mb-8">
             <div
               className="text-[#F5500A] text-sm tracking-[2px] shrink-0"
               style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -505,7 +507,7 @@ export default function FatLossGuidePage() {
               </h3>
             </div>
           </div>
-          <div className="ml-[72px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90 mb-10">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90 mb-10">
             <p>
               Supplements do exactly what the name says — they supplement a
               solid nutrition foundation. They are not a shortcut. They are not
@@ -518,7 +520,7 @@ export default function FatLossGuidePage() {
               useful.
             </p>
           </div>
-          <div className="ml-[72px] grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { icon: "🥛", title: "Whey Protein", desc: "Convenient when hitting protein targets from whole foods becomes difficult. Not better than real food — just faster and easier on the go." },
               { icon: "⚡", title: "Creatine Monohydrate", desc: "The most research-backed performance supplement available. Supports strength and endurance during resistance training. 5g daily. That's it." },
@@ -542,8 +544,8 @@ export default function FatLossGuidePage() {
         </div>
 
         {/* 1.4 Maximising Calories */}
-        <div className="max-w-[900px] mx-auto mb-16">
-          <div className="flex gap-8 mb-8">
+        <div className="max-w-7xl mx-auto mb-12 md:mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-6 md:mb-8">
             <div
               className="text-[#F5500A] text-sm tracking-[2px] shrink-0"
               style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -565,21 +567,21 @@ export default function FatLossGuidePage() {
               </h3>
             </div>
           </div>
-          <div className="ml-[72px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90 mb-10">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90 mb-10">
             <p>
               Knowing your calorie target is step one. Making those calories
               work for you — keeping you full, fuelling your training, and
               fitting your actual life — is where most people struggle.
             </p>
           </div>
-          <div className="ml-[72px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] rounded overflow-hidden order-2 lg:order-1">
               <Image
                 src="/images/nutrition-mealprep.png"
                 alt="Meal prep containers with balanced meals"
                 fill
                 className="object-cover"
-                sizes="450px"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
             <div className="order-1 lg:order-2">
@@ -616,7 +618,7 @@ export default function FatLossGuidePage() {
               </div>
             </div>
           </div>
-          <div className="ml-[72px] mt-12 p-6 bg-[#1A1A1A] rounded border-l-4 border-[#F5500A]">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] mt-12 p-6 bg-[#1A1A1A] rounded border-l-4 border-[#F5500A]">
             <div
               className="text-[11px] tracking-[3px] text-[#F5500A] uppercase mb-2"
               style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -647,7 +649,7 @@ export default function FatLossGuidePage() {
       </div>
 
       {/* Section 02: Training */}
-      <div className="pt-20 pb-12 px-16 md:px-28 bg-[#0D0D0D]">
+      <div className="pt-12 sm:pt-16 md:pt-20 pb-8 md:pb-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#0D0D0D]">
         <div
           className="text-[#F5500A] text-sm tracking-[3px] mb-4"
           style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -672,22 +674,22 @@ export default function FatLossGuidePage() {
           to do it without overcomplicating it.
         </p>
       </div>
-      <div className="px-16 md:px-28 py-12 bg-[#0D0D0D]">
-        <div className="max-w-[900px] mx-auto mb-16">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 py-8 md:py-12 bg-[#0D0D0D]">
+        <div className="max-w-7xl mx-auto mb-10 md:mb-16">
           <div className="relative w-full aspect-[16/10] rounded overflow-hidden">
             <Image
               src="/images/training-barbell.png"
               alt="Hands gripping a barbell"
               fill
               className="object-cover"
-              sizes="900px"
+              sizes="(max-width: 768px) 100vw, 1280px"
             />
           </div>
         </div>
 
         {/* 2.1 Structuring Training */}
-        <div className="max-w-[900px] mx-auto mb-16">
-          <div className="flex gap-8 mb-8">
+        <div className="max-w-7xl mx-auto mb-12 md:mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-6 md:mb-8">
             <div
               className="text-[#F5500A] text-sm tracking-[2px] shrink-0"
               style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -709,7 +711,7 @@ export default function FatLossGuidePage() {
               </h3>
             </div>
           </div>
-          <div className="ml-[72px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90 mb-10">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90 mb-10">
             <p>
               How you structure your training depends on four variables: your
               training experience, your goal, your lifestyle, and your ability to
@@ -725,7 +727,7 @@ export default function FatLossGuidePage() {
               progress.
             </p>
           </div>
-          <div className="ml-[72px] grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
             {[
               { val: "3–4x", label: "Sessions per week for beginners" },
               { val: "4–5x", label: "Sessions for intermediate lifters" },
@@ -745,7 +747,7 @@ export default function FatLossGuidePage() {
               </div>
             ))}
           </div>
-          <div className="ml-[72px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90">
+          <div className="sm:ml-0 md:ml-16 lg:ml-0 md:ml-16 lg:ml-[72px] space-y-5 text-base sm:text-[17px] leading-[1.7] text-[#F0EDE8]/90">
             <p>
               The concept of{" "}
               <strong>MRV (Maximal Recoverable Volume)</strong> is worth
@@ -759,8 +761,8 @@ export default function FatLossGuidePage() {
         </div>
 
         {/* 2.2 Progressive Overload */}
-        <div className="max-w-[900px] mx-auto mb-16">
-          <div className="flex gap-8 mb-8">
+        <div className="max-w-7xl mx-auto mb-12 md:mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-6 md:mb-8">
             <div
               className="text-[#F5500A] text-sm tracking-[2px] shrink-0"
               style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -782,7 +784,7 @@ export default function FatLossGuidePage() {
               </h3>
             </div>
           </div>
-          <div className="ml-[72px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90 mb-10">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90 mb-10">
             <p>
               Progressive overload is the method of advancing your training over
               time so your body continues to be challenged — and continues to
@@ -796,7 +798,7 @@ export default function FatLossGuidePage() {
               way.
             </p>
           </div>
-          <div className="ml-[72px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               { icon: "📈", title: "Increase Load", desc: "Add weight to the bar or dumbbells when you can complete your target reps with clean form across all sets." },
               { icon: "🔄", title: "Increase Reps", desc: "Hit the top of your rep range consistently before increasing load. One extra rep each week compounds quickly." },
@@ -820,7 +822,7 @@ export default function FatLossGuidePage() {
               </div>
             ))}
           </div>
-          <div className="ml-[72px] mt-12 p-8 border-l-4 border-[#F5500A] bg-[#F5500A]/5">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] mt-12 p-8 border-l-4 border-[#F5500A] bg-[#F5500A]/5">
             <p
               className="text-xl leading-relaxed text-[#F0EDE8] italic mb-4"
               style={{ fontFamily: "var(--font-barlow)" }}
@@ -839,8 +841,8 @@ export default function FatLossGuidePage() {
         </div>
 
         {/* 2.3 NEAT & Cardio */}
-        <div className="max-w-[900px] mx-auto mb-16">
-          <div className="flex gap-8 mb-8">
+        <div className="max-w-7xl mx-auto mb-12 md:mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-6 md:mb-8">
             <div
               className="text-[#F5500A] text-sm tracking-[2px] shrink-0"
               style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -862,7 +864,7 @@ export default function FatLossGuidePage() {
               </h3>
             </div>
           </div>
-          <div className="ml-[72px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div
                 className="text-[11px] tracking-[3px] text-[#F5500A] uppercase mb-2"
@@ -904,11 +906,11 @@ export default function FatLossGuidePage() {
                 alt="Running shoes on wet street"
                 fill
                 className="object-cover"
-                sizes="450px"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
-          <div className="ml-[72px] mt-12 p-6 bg-[#141414] rounded border-l-4 border-[#F5500A]">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] mt-12 p-6 bg-[#141414] rounded border-l-4 border-[#F5500A]">
             <div
               className="text-[11px] tracking-[3px] text-[#F5500A] uppercase mb-2"
               style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -938,8 +940,8 @@ export default function FatLossGuidePage() {
         </div>
 
         {/* 2.4 Training Tips */}
-        <div className="max-w-[900px] mx-auto mb-16">
-          <div className="flex gap-8 mb-8">
+        <div className="max-w-7xl mx-auto mb-12 md:mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mb-6 md:mb-8">
             <div
               className="text-[#F5500A] text-sm tracking-[2px] shrink-0"
               style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -961,7 +963,7 @@ export default function FatLossGuidePage() {
               </h3>
             </div>
           </div>
-          <div className="ml-[72px] grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="ml-0 md:ml-16 lg:ml-[72px] grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { icon: "🎯", title: "Form Over Weight", desc: "Leave your ego at the door. Sacrificing range of movement for an extra 5kg is how you pick up injuries. Standardise your reps. Earn your right to progress." },
               { icon: "📋", title: "Stick to the Plan", desc: "Programme hopping kills progress. It's impossible to measure improvement if you're changing exercises every week. Execute the plan. Review. Adjust. Repeat." },
@@ -986,7 +988,7 @@ export default function FatLossGuidePage() {
       </div>
 
       {/* Section 03: Lifestyle */}
-      <div className="pt-20 pb-12 px-16 md:px-28 bg-[#141414]">
+      <div className="pt-12 sm:pt-16 md:pt-20 pb-8 md:pb-12 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#141414]">
         <div
           className="text-[#F5500A] text-sm tracking-[3px] mb-4"
           style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -1011,19 +1013,19 @@ export default function FatLossGuidePage() {
           fighting against you. Here&apos;s what to fix.
         </p>
       </div>
-      <div className="px-16 md:px-28 py-12 bg-[#141414]">
-        <div className="max-w-[900px] mx-auto mb-12">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 py-8 md:py-12 bg-[#141414]">
+        <div className="max-w-7xl mx-auto mb-10 md:mb-12">
           <div className="relative w-full aspect-[16/10] rounded overflow-hidden">
             <Image
               src="/images/lifestyle-sleep.png"
               alt="Bedroom with nightstand, lamp, and journal"
               fill
               className="object-cover"
-              sizes="900px"
+              sizes="(max-width: 768px) 100vw, 1280px"
             />
           </div>
         </div>
-        <div className="max-w-[780px] mx-auto mb-12 space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90">
+        <div className="max-w-3xl mx-auto mb-12 space-y-5 text-[17px] leading-[1.7] text-[#F0EDE8]/90">
           <p>
             Your ability to succeed with nutrition and training is almost
             entirely dependent on the lifestyle surrounding it. If you&apos;re
@@ -1034,7 +1036,7 @@ export default function FatLossGuidePage() {
             performance factors.
           </p>
         </div>
-        <div className="max-w-[900px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {[
             {
               num: "01",
@@ -1123,7 +1125,7 @@ export default function FatLossGuidePage() {
             </div>
           ))}
         </div>
-        <div className="max-w-[780px] mx-auto p-8 border-l-4 border-[#F5500A] bg-[#F5500A]/5 mb-12">
+        <div className="max-w-3xl mx-auto p-8 border-l-4 border-[#F5500A] bg-[#F5500A]/5 mb-12">
           <p
             className="text-xl leading-relaxed text-[#F0EDE8] italic mb-4"
             style={{ fontFamily: "var(--font-barlow)" }}
@@ -1139,7 +1141,7 @@ export default function FatLossGuidePage() {
             Maciej Nowicki — MN Online Coaching
           </div>
         </div>
-        <div className="max-w-[900px] mx-auto p-6 bg-[#1A1A1A] rounded border-l-4 border-[#F5500A] mt-12">
+        <div className="max-w-7xl mx-auto p-4 sm:p-6 bg-[#1A1A1A] rounded border-l-4 border-[#F5500A] mt-10 md:mt-12">
           <div
             className="text-[11px] tracking-[3px] text-[#F5500A] uppercase mb-2"
             style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -1173,7 +1175,7 @@ export default function FatLossGuidePage() {
       </div>
 
       {/* CTA Section */}
-      <section className="relative py-24 px-16 md:px-28 bg-[#141414] border-t border-[#2A2A2A]">
+      <section className="relative py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-[#141414] border-t border-[#2A2A2A]">
         <div
           className="text-[11px] tracking-[5px] text-[#F5500A] uppercase mb-6 text-center"
           style={{ fontFamily: "var(--font-barlow-condensed)" }}
@@ -1213,8 +1215,8 @@ export default function FatLossGuidePage() {
             Free Macro Calculator
           </a>
         </div>
-        <div className="pt-12 mt-12 border-t border-white/8 max-w-[800px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-0.5 bg-[#2A2A2A]">
+        <div className="pt-8 md:pt-12 mt-8 md:mt-12 border-t border-white/8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0.5 bg-[#2A2A2A]">
             <a
               href={TDEE_CALCULATOR_URL}
               target="_blank"
@@ -1287,7 +1289,7 @@ export default function FatLossGuidePage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-10 px-16 md:px-28 bg-black flex flex-col md:flex-row items-center justify-between gap-4">
+      <footer className="py-8 md:py-10 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 bg-black flex flex-col md:flex-row items-center justify-between gap-4">
         <div
           className="text-lg tracking-[4px]"
           style={{ fontFamily: "var(--font-bebas)" }}

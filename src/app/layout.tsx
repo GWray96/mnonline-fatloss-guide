@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     "Everything you need to understand nutrition, training, and lifestyle to build the body you actually want — without the bullshit.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
