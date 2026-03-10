@@ -8,16 +8,26 @@ export default function FatLossGuidePage() {
     <div className="min-h-screen">
       {/* Cover */}
       <section className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-black">
-        <div className="absolute inset-0 bg-[#0D0D0D]" />
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/cover-gym.png"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+        </div>
+        <div className="absolute inset-0 z-[1] bg-[#0D0D0D]/50" />
         <div
-          className="absolute inset-0 opacity-[0.04] mix-blend-overlay pointer-events-none"
+          className="absolute inset-0 z-[2] opacity-[0.04] mix-blend-overlay pointer-events-none"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D0D] via-transparent to-transparent" />
-        <div className="absolute top-0 right-0 w-[200px] h-[200px] bg-[#F5500A]/10 rounded-full blur-[100px]" />
-        <div className="absolute right-12 top-12 font-[family-name:var(--font-bebas)] text-[11px] tracking-[4px] text-[#F0EDE8]/60 uppercase">
+        <div className="absolute inset-0 z-[2] bg-gradient-to-t from-[#0D0D0D] via-transparent to-transparent" />
+        <div className="absolute top-0 right-0 z-[2] w-[200px] h-[200px] bg-[#F5500A]/10 rounded-full blur-[100px]" />
+        <div className="absolute right-12 top-12 z-10 font-[family-name:var(--font-bebas)] text-[11px] tracking-[4px] text-[#F0EDE8]/60 uppercase">
           MN ONLINE COACHING
         </div>
         <div className="relative z-10 px-16 pb-24 md:px-28">
